@@ -1,5 +1,8 @@
 import React from "react";
-import "./App.css";
+/* import { TodoList } from "./TodoList.jsx"; */
+import { TodoListClass } from "./TodoListClass";
+/* import { MyName } from "./MyName"; */
+import { MyNameClass } from "./MyNameClass";
 
 function App() {
   /* return React.createElement(
@@ -7,7 +10,7 @@ function App() {
     { id: "5" },
     "Hello World, I'm here!!!",
     React.createElement("span", null, "Bye")
-  ); */
+  ); 
 
   const myCustomLabel = <label htmlFor="inputId">Hello again!</label>;
   return (
@@ -21,6 +24,16 @@ function App() {
       <h2 id="5" style={{ background: "pink" }}>
         <span>Bye!</span>
       </h2>
+    </div>
+  ); */
+
+  return (
+    <div>
+      <h1>Todo List</h1>
+      {/* <TodoList /> */}
+      <TodoListClass />
+      {/* <MyName /> */}
+      <MyNameClass />
     </div>
   );
 }
