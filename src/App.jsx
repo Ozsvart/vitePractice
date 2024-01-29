@@ -1,7 +1,9 @@
 import React from "react";
 /* import { TodoList } from "./TodoList.jsx"; */
 import { TodoListClass } from "./TodoListClass";
-/* import { MyName } from "./MyName"; */
+/* import { TodoListItem } from "./TodoListItem"; */
+import { TodoListItemClass } from "./TodoListItemClass";
+import { MyName } from "./MyName";
 import { MyNameClass } from "./MyNameClass";
 
 function App() {
@@ -32,8 +34,14 @@ function App() {
       <h1>Todo List</h1>
       {/* <TodoList /> */}
       <TodoListClass />
-      {/* <MyName /> */}
-      <MyNameClass />
+      {/* <TodoListItem isComplete>Todo Item 1</TodoListItem> */}
+      <TodoListItemClass isComplete>Todo Class Item 1</TodoListItemClass>
+      <MyName name="Custom Name" age={30} isProgrammer={true} />
+      <MyName name="Different Name" age={27} isProgrammer={false} />
+      <MyName>
+        <h2>Function Child</h2>
+      </MyName>
+      <MyNameClass>Class Child</MyNameClass>
     </div>
   );
 }

@@ -1,3 +1,8 @@
-export function MyName() {
-  return <h2>Viktória</h2>;
+export function MyName({ name, age, isProgrammer, children }) {
+  console.log("Is Programmer", isProgrammer);
+  return (
+    <div>
+      {name} {age} {children}
+    </div>
+  );
 }
